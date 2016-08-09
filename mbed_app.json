@@ -1,0 +1,18 @@
+{
+    "config": {
+        "network-interface":{
+            "help": "options are ETHERNET,WIFI,MESH_LOWPAN_ND,MESH_THREAD",
+            "value": "MESH_THREAD"
+        }
+    },
+    "macros": ["MBEDTLS_USER_CONFIG_FILE=\"mbedtls_mbed_client_config.h\""],
+    "target_overrides": {
+        "*": {
+            "target.features_add": ["CLIENT", "IPV6", "COMMON_PAL"],
+            "mbed-client.reconnection-count": 3,
+            "mbed-client.reconnection-interval": 5,
+            "mbed-mesh-api.6lowpan-nd-channel-page": 0,
+            "mbed-mesh-api.6lowpan-nd-channel": 12
+        }
+    }
+}
