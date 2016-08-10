@@ -11,8 +11,8 @@
             "target.features_add": ["CLIENT", "IPV6", "COMMON_PAL"],
             "mbed-client.reconnection-count": 3,
             "mbed-client.reconnection-interval": 5,
-            "mbed-mesh-api.6lowpan-nd-channel-page": 0,
-            "mbed-mesh-api.6lowpan-nd-channel": 12
+            "mbed-mesh-api.thread-config-channel-page": 0,
+            "mbed-mesh-api.thread-config-channel": 12
         }
     }
 }
